@@ -1,0 +1,23 @@
+﻿<Window x:Class="WpfAppAuth.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppAuth"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="300" Width="300">
+    <Grid>
+        <UniformGrid Rows="5" Columns="2">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="24">Log</TextBlock>
+            <TextBox x:Name="TbLog"></TextBox>
+            <TextBlock FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center">Pass</TextBlock>
+            <TextBox x:Name="TbPass"></TextBox>
+            <TextBlock FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center">E-mail</TextBlock>
+            <TextBox x:Name="TbEmail"></TextBox>
+            <Button x:Name="BnReg" Click="BnReg_Click">Reg</Button>
+            <Button x:Name="BnAuth" Click="BnAuth_Click">Auth</Button>
+            <TextBox x:Name="TbCode"></TextBox>
+            <Button x:Name="BnForgotPass" Click="BnForgotPass_Click">Forgot Password</Button>
+        </UniformGrid> 
+    </Grid>
+</Window>
